@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Скрытые расходы при строительстве дома: 7 статей, которые обычно забывают — DG Журнал</title>
+<meta name="description" content="Участок, коммуникации, инженерия, отделка, благоустройство, изменения по ходу, ошибки и переделки — 7 статей, которые на старте редко учитывают. Чек-лист от DOMGAZOBETON по опыту 300 домов.">
+<link rel="canonical" href="https://domgazobeton.com/journal/skrytye-rashody-pri-stroitelstve">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://domgazobeton.com/journal/assets/img/rashody-01-uchastok.png">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/form.css">
+<link rel="stylesheet" href="assets/css/journal.css">
+<link rel="stylesheet" href="assets/css/article.css">
+<link rel="stylesheet" href="assets/css/modal.css">
+
+<style>
+  .pros-cons{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .pros-cons__col{padding:24px;border:1.5px solid var(--line)}
+  .pros-cons__title{font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:14px}
+  .pros-cons__title--plus{color:#1E8A4C}
+  .pros-cons__title--minus{color:#C44A2A}
+  .pros-cons__list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+  .pros-cons__list li{padding-left:22px;position:relative;font-size:15px;line-height:1.45}
+  .pros-cons__list li::before{position:absolute;left:0;top:0;font-weight:700;font-size:14px}
+  .pros-cons__list--plus li::before{content:'+';color:#1E8A4C}
+  .pros-cons__list--minus li::before{content:'–';color:#C44A2A}
+  .article-content ol.numbered-list{counter-reset:n;list-style:none;padding:0;margin-top:24px;display:flex;flex-direction:column;gap:20px}
+  .article-content ol.numbered-list li{counter-increment:n;padding-left:56px;position:relative;font-size:17px;line-height:1.55;margin-top:0}
+  .article-content ol.numbered-list li::before{content:counter(n);position:absolute;left:0;top:-4px;font-size:32px;font-weight:800;color:var(--echo);letter-spacing:-0.02em;line-height:1;width:40px}
+  .article-content ol.numbered-list li strong{display:block;margin-bottom:4px}
+  .sources-list{margin-top:24px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:14px;counter-reset:s}
+  .sources-list li{counter-increment:s;padding-left:32px;position:relative;font-size:15px;line-height:1.5;color:var(--muted)}
+  .sources-list li::before{content:counter(s)'.';position:absolute;left:0;top:0;font-weight:700;color:var(--ink)}
+  .sources-list a{color:var(--ink);border-bottom:1px solid var(--line)}
+  @media (max-width:1023px){.pros-cons{grid-template-columns:1fr;gap:16px}.pros-cons__col{padding:18px}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"Organization","@id":"https://domgazobeton.com/#org","name":"DOMGAZOBETON","url":"https://domgazobeton.com/"},
+  {"@type":"Article","headline":"Скрытые расходы при строительстве дома: 7 статей, которые обычно забывают","image":"https://domgazobeton.com/journal/assets/img/rashody-01-uchastok.png","datePublished":"2026-05-31","dateModified":"2026-05-31","author":{"@id":"https://domgazobeton.com/#org"},"publisher":{"@id":"https://domgazobeton.com/#org"},"articleSection":"Бюджет","inLanguage":"ru-RU"},
+  {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://domgazobeton.com/"},{"@type":"ListItem","position":2,"name":"Журнал","item":"https://domgazobeton.com/journal"},{"@type":"ListItem","position":3,"name":"Бюджет","item":"https://domgazobeton.com/journal?rubric=budget"},{"@type":"ListItem","position":4,"name":"Скрытые расходы при стройке"}]},
+  {"@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Сколько стоит подключить электричество к участку?","acceptedAnswer":{"@type":"Answer","text":"Зависит от региона и удалённости от сети. Базовое подключение по льготному тарифу — символическое, но фактические затраты на техусловия, кабель и щит — десятки тысяч рублей и выше. Уточнять заранее в сетевой компании по конкретному адресу."}},
+    {"@type":"Question","name":"Что обычно «всплывает» по участку после покупки?","acceptedAnswer":{"@type":"Answer","text":"Чаще всего — сложный грунт (нужен усиленный фундамент), перепады высот (земляные работы и подпорные стены), высокий уровень грунтовых вод (дренаж). До покупки имеет смысл заказать геологические изыскания."}},
+    {"@type":"Question","name":"Сколько процентов бюджета уходит на отделку и благоустройство?","acceptedAnswer":{"@type":"Answer","text":"В среднем 30–40% от общего бюджета строительства уходит на отделку и благоустройство участка вместе. Это та часть, которую недооценивают чаще всего."}},
+    {"@type":"Question","name":"Как избежать роста бюджета по ходу стройки?","acceptedAnswer":{"@type":"Answer","text":"Главный рычаг — детальная проработка проекта на старте, чтобы по ходу не приходилось «доделывать на ходу». И прозрачная смета с указанием, что входит в стоимость, а что — отдельные позиции."}}
+  ]}
+]}
+</script>
+</head>
+<body>
+
+<header class="site-header"><div class="site-header__inner"><a href="/" class="site-header__logo">DOMGAZOBETON</a><nav class="nav"><span class="nav__item">Проекты<span class="nav__caret">▾</span><span class="nav__dropdown"><a href="/projects">Все проекты</a><a href="/projects/popular">Популярные проекты</a><a href="/projects/ready">Купить готовый дом</a></span></span><span class="nav__item">Услуги<span class="nav__caret">▾</span><span class="nav__dropdown"><a href="/services/design">Проектирование</a><a href="/services/build">Строительство</a><a href="/services/interior">Дизайн интерьеров</a><a href="/services/engineering">Инженерные системы</a><a href="/services/finishing">Отделка</a><a href="/services/maintenance">Обслуживание дома</a></span></span><span class="nav__item">Компания<span class="nav__caret">▾</span><span class="nav__dropdown"><a href="/about">О нас</a><a href="/about/excursion">Экскурсия в компанию</a><a href="/about/merch">Мерч</a></span></span><a href="/built" class="nav__item">Построено</a><a href="/mortgage" class="nav__item">Ипотека</a><a href="/journal" class="nav__item nav__item--active">Журнал</a><a href="/contacts" class="nav__item">Контакты</a></nav><div class="site-header__cta"><a href="#call-form" class="site-header__cta-link">Заказать звонок</a><a href="tel:+78005502834" class="site-header__phone">8 800 550-28-34</a></div><button class="burger" aria-label="Меню"><span></span><span></span><span></span></button></div></header>
+
+<aside id="mobile-menu" class="mobile-menu"><div class="mobile-menu__top"><span class="site-header__logo">DOMGAZOBETON</span><button class="mobile-menu__close">✕</button></div><nav class="mobile-menu__list"><a href="/projects">Проекты</a><a href="/services">Услуги</a><a href="/about">Компания</a><a href="/built">Построено</a><a href="/mortgage">Ипотека</a><a href="/journal">Журнал</a><a href="/contacts">Контакты</a></nav><div class="mobile-menu__foot"><a href="tel:+78005502834" class="mobile-menu__phone">8 800 550-28-34</a><a href="#call-form" class="btn btn--primary">Заказать звонок</a></div></aside>
+
+<nav class="crumbs"><a href="/">Главная</a><span class="crumbs__sep">/</span><a href="/journal">Журнал</a><span class="crumbs__sep">/</span><a href="/journal?rubric=budget">Бюджет</a><span class="crumbs__sep">/</span><span class="crumbs__current">Скрытые расходы при стройке</span></nav>
+
+<header class="article-hero">
+  <div class="label article-hero__rubric">Бюджет · Планирование</div>
+  <h1 class="article-hero__title">Скрытые расходы при строительстве дома: 7 статей, которые обычно забывают</h1>
+  <p class="article-hero__lead">Бюджет почти всегда растёт — не из-за «жадности подрядчика», а из-за статей, которые не учли на старте. Разбираем семь типовых, чтобы вы знали о них до договора, а не после.</p>
+  <div class="article-hero__meta">
+    <span>Автор статьи</span>
+    <span class="article-hero__meta-sep">·</span>
+    <time datetime="2026-05-31">обновлено 31 мая 2026</time>
+    <span class="article-hero__meta-sep">·</span>
+    <span>7 минут чтения</span>
+  </div>
+</header>
+
+<div class="article-cover-wrap">
+  <img class="article-cover" src="assets/img/rashody-01-uchastok.png" alt="Скрытые расходы при строительстве дома DOMGAZOBETON" loading="eager" decoding="async">
+</div>
+
+<div class="article-layout">
+  <aside class="article-toc" aria-label="Оглавление">
+    <div class="label article-toc__label">В этой статье</div>
+    <ul class="article-toc__list">
+      <li class="article-toc__item is-active" data-target="sec-1"><a href="#sec-1">1. Особенности участка</a></li>
+      <li class="article-toc__item" data-target="sec-2"><a href="#sec-2">2. Коммуникации</a></li>
+      <li class="article-toc__item" data-target="sec-3"><a href="#sec-3">3. Инженерия</a></li>
+      <li class="article-toc__item" data-target="sec-4"><a href="#sec-4">4. Отделка</a></li>
+      <li class="article-toc__item" data-target="sec-5"><a href="#sec-5">5. Благоустройство</a></li>
+      <li class="article-toc__item" data-target="sec-6"><a href="#sec-6">6. Изменения по ходу</a></li>
+      <li class="article-toc__item" data-target="sec-7"><a href="#sec-7">7. Ошибки и переделки</a></li>
+      <li class="article-toc__item" data-target="sec-nelzya"><a href="#sec-nelzya">Чего нельзя</a></li>
+      <li class="article-toc__item" data-target="sec-dg"><a href="#sec-dg">Опыт DG</a></li>
+      <li class="article-toc__item" data-target="sec-faq"><a href="#sec-faq">FAQ</a></li>
+    </ul>
+    <div class="article-side-cta">
+      <div class="label article-side-cta__label">Помощь сметчика</div>
+      <div class="article-side-cta__title">Получить реалистичную смету под ваш участок</div>
+      <div class="article-side-cta__sub">Учтём грунт, коммуникации, инженерию и отделку — бесплатно.</div>
+      <div style="margin-top:16px"><button type="button" class="btn btn--primary btn--sm" data-open-modal data-modal-title="Посчитать смету без скрытых расходов" data-modal-sub="Соберём прозрачную смету по вашему проекту.">Получить смету</button></div>
+    </div>
+  </aside>
+
+  <details class="article-toc-mobile">
+    <summary><div><div class="article-toc-mobile__title">Оглавление</div><div class="article-toc-mobile__count">10 разделов · 7 мин чтения</div></div><span class="article-toc-mobile__icon">+</span></summary>
+    <ul class="article-toc-mobile__list"><li><a href="#sec-1">1. Участок</a></li><li><a href="#sec-2">2. Коммуникации</a></li><li><a href="#sec-3">3. Инженерия</a></li><li><a href="#sec-4">4. Отделка</a></li><li><a href="#sec-5">5. Благоустройство</a></li><li><a href="#sec-6">6. Изменения по ходу</a></li><li><a href="#sec-7">7. Ошибки</a></li><li><a href="#sec-nelzya">Чего нельзя</a></li><li><a href="#sec-dg">Опыт DG</a></li><li><a href="#sec-faq">FAQ</a></li></ul>
+  </details>
+
+  <article class="article-content">
+
+    <p>Почти каждый, кто начинает строить дом, думает: «Вот есть бюджет, в него и уложимся». На практике всё иначе — бюджет чаще всего растёт, потому что есть вещи, о которых на старте не вспоминают. Это не «жадность подрядчика» и не неожиданность: это просто статьи, которые не были учтены заранее. Ниже разбираем семь основных скрытых расходов — чтобы вы знали о них до того, как заключаете договор, а не после.</p>
+
+    <section id="sec-1">
+      <h2>1. Особенности участка</h2>
+      <p>Расход на сам участок все знают. А вот что у него могут быть «особенности» — нет.</p>
+      <ul>
+        <li><strong>Сложный грунт</strong> → дороже фундамент.</li>
+        <li><strong>Перепады высот</strong> → дополнительные земляные работы и подпорные стены.</li>
+        <li><strong>Высокий уровень грунтовых вод</strong> → нужен дренаж.</li>
+      </ul>
+      <p>Хорошее правило: до покупки участка заказать геологические изыскания. Стоят сравнительно недорого, но избавляют от сюрпризов на 500 тыс. рублей и больше уже на старте стройки.</p>
+      <figure>
+        <img src="assets/img/rashody-01-uchastok.png" alt="Особенности участка влияют на бюджет стройки" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section id="sec-2">
+      <h2>2. Подведение коммуникаций</h2>
+      <p>На практике — один из самых сложных и затратных этапов, который сильно влияет на итоговый бюджет.</p>
+      <p><strong>Электричество</strong> обычно не входит в базовую стоимость дома. И само подключение — это не одна услуга, а несколько этапов: получение техусловий, подключение к сети, прокладка кабеля до дома, установка щита. Каждый этап оплачивается отдельно.</p>
+      <p><strong>Водоснабжение.</strong> Если нет центральной воды — бурится скважина. Плюс к этому: насосное оборудование, фильтрация, ввод в дом.</p>
+      <p><strong>Канализация и газ.</strong> Тоже не один платёж, а целый комплекс работ: проектирование, согласования, подключение, монтаж. Важно понимать это на старте, чтобы бюджет не вырос в процессе.</p>
+      <figure>
+        <img src="assets/img/rashody-02-kommunikatsii.png" alt="Подведение коммуникаций к дому" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section id="sec-3">
+      <h2>3. Инженерия дома</h2>
+      <p>Отопление, вентиляция, водоснабжение, канализация, электрика — каждая система проектируется и монтируется отдельно. И внутри каждой из них есть десятки решений: оборудование, разводка, узлы, настройка.</p>
+      <p>На старте часто учитывают только базовые вещи. По факту добавляются:</p>
+      <ul>
+        <li>Котельная и её обвязка.</li>
+        <li>Тёплые полы (там, где они нужны).</li>
+        <li>Автоматика и «умный дом».</li>
+        <li>Приточно-вытяжная вентиляция.</li>
+      </ul>
+      <figure>
+        <img src="assets/img/rashody-03-inzheneriya.png" alt="Инженерные системы дома" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section id="sec-4">
+      <h2>4. Отделка</h2>
+      <p>Один из самых недооценённых этапов по бюджету. Сюда входит:</p>
+      <ul>
+        <li>Выравнивание стен.</li>
+        <li>Покрытия — обои, краска, штукатурка.</li>
+        <li>Плитка, керамогранит.</li>
+        <li>Потолки.</li>
+        <li>Двери, плинтуса, наличники.</li>
+        <li>Сантехника, смесители, водорозетки.</li>
+      </ul>
+      <p>Бюджет здесь сильно зависит от выбора материалов. Одинаковые по площади дома могут отличаться по стоимости отделки в разы.</p>
+      <figure>
+        <img src="assets/img/rashody-04-otdelka.png" alt="Отделка дома" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <div class="article-final-cta">
+      <form class="lead-form" data-action="/api/lead" novalidate>
+        <div class="lead-form__hero"><img src="assets/img/rashody-03-inzheneriya.png" alt="Объект DOMGAZOBETON на стройке"></div>
+        <div class="lead-form__title">Запишитесь на экскурсию по строящимся объектам DOMGAZOBETON</div>
+        <div class="lead-form__sub">Свяжемся с вами, чтобы выбрать удобное время.</div>
+        <div class="lead-form__fields">
+          <input class="lead-form__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="lead-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+          <select class="lead-form__select" name="region" required><option value="">Регион строительства</option><option>СПб и область</option><option>Москва и область</option><option>Сочи и юг</option><option>Казахстан</option></select>
+          <button class="lead-form__submit" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+
+    <section id="sec-5">
+      <h2>5. Благоустройство участка</h2>
+      <p>После строительства дома работы не заканчиваются — участок тоже требует вложений: дорожки, отмостка, забор, освещение, озеленение, террасы. Это не дополнение, а часть готового результата, без которого дом не ощущается завершённым. Этот этап часто не учитывают в начале, хотя он занимает значительную часть бюджета.</p>
+      <figure>
+        <img src="assets/img/rashody-05-blagoust.png" alt="Благоустройство участка" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section id="sec-6">
+      <h2>6. Изменения по ходу стройки</h2>
+      <p>Почти на каждом объекте в процессе появляются идеи что-то поменять: добавить окно, увеличить террасу, изменить планировку, перенести розетки или свет. Каждое такое решение — это не «чуть-чуть переделать», а дополнительные работы, материалы, время и ресурсы.</p>
+      <p>Чем детальнее проект на старте, тем меньше изменений по ходу. Хороший проект — это не «подробный чертёж», а проработка всех решений до того, как они стали стройкой.</p>
+    </section>
+
+    <section id="sec-7">
+      <h2>7. Ошибки и переделки</h2>
+      <p>Если нет детальной проработки проекта или контроля на стройке — появляются ошибки. Иногда мелочи, иногда переделка уже выполненных работ. Переделка всегда дороже, чем сделать сразу правильно: вы платите за демонтаж, новые материалы и работу.</p>
+      <p>Поэтому грамотное проектирование и технический надзор — это не «дополнительные расходы», а способ сэкономить. На наших объектах техническая команда выезжает на каждый ключевой узел.</p>
+    </section>
+
+    <section id="sec-nelzya">
+      <h2>Чего нельзя делать при планировании бюджета</h2>
+      <ol class="numbered-list">
+        <li><strong>Брать «среднюю по рынку» стоимость без оглядки на участок.</strong> Грунт, перепады, удалённость от сетей могут добавить миллионы.</li>
+        <li><strong>Считать стоимость только до коробки.</strong> Коробка — это около 50–60% бюджета. Дальше идут коммуникации, инженерия, отделка, благоустройство.</li>
+        <li><strong>Закладывать «по факту» без проекта.</strong> Без проработанного проекта изменений будет много, а каждая — это плюс к бюджету.</li>
+        <li><strong>Экономить на проектировании.</strong> Дешёвый проект чаще всего «отыгрывается» в стройке десятикратно — через ошибки, переделки и неучтённое.</li>
+      </ol>
+    </section>
+
+    <section id="sec-dg">
+      <h2>Что DOMGAZOBETON делает на своих объектах</h2>
+      <p>За 10 лет работы и 300 построенных домов мы выработали правило: на старте закладываем максимально реалистичный бюджет — не «минимальный», а тот, в который дом реально уложится. И если по ходу стройки появляются дополнительные расходы (например, всплыла особенность участка), мы предупреждаем заранее, а не «по факту». Это часть позиции «одна точка ответственности под ключ» — подробнее <a class="link" href="https://domgazobeton.com/service_building">как мы строим</a>, <a class="link" href="https://domgazobeton.com/contacts">обсудить проект и смету</a>.</p>
+    </section>
+
+    <section id="sec-faq" class="faq">
+      <h2>Частые вопросы</h2>
+      <details class="faq-item" open><summary><span class="faq-item__q">Сколько стоит подключить электричество к участку?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Зависит от региона и удалённости от сети. Базовое подключение по льготному тарифу — символическое, но фактические затраты на техусловия, кабель и щит — десятки тысяч рублей и выше. Уточнять заранее в сетевой компании по конкретному адресу.</p></div></details>
+      <details class="faq-item"><summary><span class="faq-item__q">Что обычно «всплывает» по участку после покупки?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Чаще всего — сложный грунт (нужен усиленный фундамент), перепады высот (земляные работы и подпорные стены), высокий уровень грунтовых вод (дренаж). До покупки имеет смысл заказать геологические изыскания.</p></div></details>
+      <details class="faq-item"><summary><span class="faq-item__q">Сколько процентов бюджета уходит на отделку и благоустройство?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>В среднем 30–40% от общего бюджета строительства уходит на отделку и благоустройство участка вместе. Это та часть, которую недооценивают чаще всего.</p></div></details>
+      <details class="faq-item"><summary><span class="faq-item__q">Как избежать роста бюджета по ходу стройки?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Главный рычаг — детальная проработка проекта на старте, чтобы по ходу не приходилось «доделывать на ходу». И прозрачная смета с указанием, что входит в стоимость, а что — отдельные позиции.</p></div></details>
+    </section>
+
+    <section style="margin-top:64px"><h2>Источники</h2>
+      <ol class="sources-list">
+        <li>ДОМ.РФ — рынок ИЖС: <a href="https://дом.рф/" rel="nofollow">дом.рф</a>.</li>
+        <li>АНСБ — газобетон у подрядчиков ИЖС: <a href="https://ancb.ru/news/read/20874" rel="nofollow">ancb.ru/news/read/20874</a>.</li>
+      </ol>
+    </section>
+
+    <section class="related">
+      <h2>Похожие статьи</h2>
+      <div class="related-grid">
+        <a class="card" href="planirovki-odnoetajnyh-domov.html"><div class="card__media"><img class="card__img" src="assets/img/planirovki-01-hero.png" alt="" loading="lazy"><div class="card__shade"></div><span class="card__rubric">Планировка</span><div class="card__title-overlay">Планировки одноэтажных домов</div></div><div class="card__meta">8 мин</div></a>
+        <a class="card" href="perekrytie-dlya-gazobetona.html"><div class="card__media"><img class="card__img" src="assets/img/perekrytie-01-hero.png" alt="" loading="lazy"><div class="card__shade"></div><span class="card__rubric">Этапы</span><div class="card__title-overlay">Какое перекрытие выбрать для газобетона</div></div><div class="card__meta">8 мин</div></a>
+        <a class="card" href="fasad-gazobetona.html"><div class="card__media"><img class="card__img" src="assets/img/fasad-01-hero.png" alt="" loading="lazy"><div class="card__shade"></div><span class="card__rubric">Материал</span><div class="card__title-overlay">Чем отделать фасад дома из газобетона</div></div><div class="card__meta">7 мин</div></a>
+      </div>
+    </section>
+
+    <div class="article-final-cta">
+      <form class="lead-form" id="call-form" data-action="/api/lead" novalidate>
+        <div class="lead-form__hero"><img src="assets/img/rashody-05-blagoust.png" alt="Стройка DOMGAZOBETON"></div>
+        <div class="lead-form__title">Запишитесь на экскурсию по строящимся объектам DOMGAZOBETON</div>
+        <div class="lead-form__sub">Свяжемся с вами, чтобы выбрать удобное время.</div>
+        <div class="lead-form__fields">
+          <input class="lead-form__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="lead-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+          <select class="lead-form__select" name="region" required><option value="">Регион строительства</option><option>СПб и область</option><option>Москва и область</option><option>Сочи и юг</option><option>Казахстан</option></select>
+          <button class="lead-form__submit" type="submit">Отправить заявку</button>
+          <div class="lead-form__agree">Нажимая кнопку, вы соглашаетесь с <a href="/privacy">политикой обработки персональных данных</a>.</div>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+
+<footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__grid"><div><div class="site-footer__brand-name">DOMGAZOBETON</div><div class="site-footer__brand-desc">Строим современные дома из газобетона в СПб, Москве, Сочи и Казахстане.</div><div class="site-footer__socials" style="margin-top:24px"><a href="https://t.me/domgazobeton">TG</a><a href="https://max.ru/domgazobeton">MAX</a><a href="https://youtube.com/@domgazobeton">YT</a><a href="https://rutube.ru/channel/domgazobeton">RT</a></div></div><div class="site-footer__col"><h4>Меню</h4><ul><li><a href="/projects">Проекты</a></li><li><a href="/services">Услуги</a></li><li><a href="/built">Построено</a></li><li><a href="/mortgage">Ипотека</a></li><li><a href="/about">Компания</a></li><li><a href="/journal">Журнал</a></li><li><a href="/contacts">Контакты</a></li></ul></div><div class="site-footer__col"><h4>Контакты</h4><div class="site-footer__address"><strong>СПб</strong>БЦ «Авиатор», ул. Мебельная, 12, корп. 1, оф. 416-1</div><div class="site-footer__address"><strong>Москва</strong>Волоколамское ш., 71, корп. 1, пом. 11/1</div></div><div class="site-footer__col"><h4>Связаться</h4><ul><li><a href="tel:+78005502834">8 800 550-28-34</a></li><li><a href="mailto:xDomgazobeton@yandex.ru">xDomgazobeton@yandex.ru</a></li><li><a href="#call-form">Заказать звонок</a></li></ul></div></div><div class="site-footer__legal"><p>Проектирование — ООО «ДОМГАЗОБЕТОН». СПб — ООО «МАТРСТРОЙ». Москва — ООО «ДОМ ГАЗОБЕТОН».</p><p>Сайт носит сугубо информационный характер и не является публичной офертой.</p></div></div></footer>
+
+<script src="assets/js/menu.js" defer></script>
+<script src="assets/js/toc.js" defer></script>
+<script src="assets/js/form.js" defer></script>
+<div id="side-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal__dialog">
+    <button class="modal__close" aria-label="Закрыть">✕</button>
+    <div class="modal__title">Получить расчёт от конструктора</div>
+    <div class="modal__sub">Свяжемся в течение 15 минут — ответим на все вопросы по проекту.</div>
+    <form class="modal__form" data-action="/api/lead" novalidate>
+      <div class="modal__fields">
+        <input class="modal__input" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+        <input class="modal__input" type="tel" name="phone" placeholder="Ваш телефон" autocomplete="tel" required>
+        <select class="modal__select" name="region" required>
+          <option value="">Регион строительства</option>
+          <option>Санкт-Петербург и область</option>
+          <option>Москва и область</option>
+          <option>Сочи и юг</option>
+          <option>Казахстан</option>
+        </select>
+        <button class="modal__submit" type="submit">Отправить заявку</button>
+        <div class="modal__agree">Нажимая кнопку, вы соглашаетесь с <a href="/privacy">политикой обработки персональных данных</a>.</div>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="assets/js/modal.js" defer></script>
+</body>
+</html>

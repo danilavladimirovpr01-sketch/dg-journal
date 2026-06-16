@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Какое перекрытие выбрать для дома из газобетона: 4 варианта и плюсы каждого — DG Журнал</title>
+<meta name="description" content="Сборные плиты, монолит, деревянные балки, «Марко» — четыре основных варианта перекрытия для газобетонного дома. Плюсы, минусы, типовые ошибки. На опыте 300 построенных домов.">
+<link rel="canonical" href="https://domgazobeton.com/journal/perekrytie-dlya-gazobetona">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://domgazobeton.com/journal/assets/img/perekrytie-01-hero.png">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/form.css">
+<link rel="stylesheet" href="assets/css/journal.css">
+<link rel="stylesheet" href="assets/css/article.css">
+<link rel="stylesheet" href="assets/css/modal.css">
+
+<style>
+  .pros-cons{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .pros-cons__col{padding:24px;border:1.5px solid var(--line)}
+  .pros-cons__title{font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:14px}
+  .pros-cons__title--plus{color:#1E8A4C}
+  .pros-cons__title--minus{color:#C44A2A}
+  .pros-cons__list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+  .pros-cons__list li{padding-left:22px;position:relative;font-size:15px;line-height:1.45}
+  .pros-cons__list li::before{position:absolute;left:0;top:0;font-weight:700;font-size:14px}
+  .pros-cons__list--plus li::before{content:'+';color:#1E8A4C}
+  .pros-cons__list--minus li::before{content:'–';color:#C44A2A}
+  .article-content ol.numbered-list{counter-reset:n;list-style:none;padding:0;margin-top:24px;display:flex;flex-direction:column;gap:20px}
+  .article-content ol.numbered-list li{counter-increment:n;padding-left:56px;position:relative;font-size:17px;line-height:1.55;margin-top:0}
+  .article-content ol.numbered-list li::before{content:counter(n);position:absolute;left:0;top:-4px;font-size:32px;font-weight:800;color:var(--echo);letter-spacing:-0.02em;line-height:1;width:40px}
+  .article-content ol.numbered-list li strong{display:block;margin-bottom:4px}
+  .sources-list{margin-top:24px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:14px;counter-reset:s}
+  .sources-list li{counter-increment:s;padding-left:32px;position:relative;font-size:15px;line-height:1.5;color:var(--muted)}
+  .sources-list li::before{content:counter(s)'.';position:absolute;left:0;top:0;font-weight:700;color:var(--ink)}
+  .sources-list a{color:var(--ink);border-bottom:1px solid var(--line)}
+  @media (max-width:1023px){.pros-cons{grid-template-columns:1fr;gap:16px}.pros-cons__col{padding:18px}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"Organization","@id":"https://domgazobeton.com/#org","name":"DOMGAZOBETON","url":"https://domgazobeton.com/"},
+  {"@type":"Article","headline":"Какое перекрытие выбрать для дома из газобетона: 4 варианта и плюсы каждого","image":"https://domgazobeton.com/journal/assets/img/perekrytie-01-hero.png","datePublished":"2026-05-25","dateModified":"2026-05-31","author":{"@id":"https://domgazobeton.com/#org"},"publisher":{"@id":"https://domgazobeton.com/#org"},"articleSection":"Этапы","inLanguage":"ru-RU"},
+  {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://domgazobeton.com/"},{"@type":"ListItem","position":2,"name":"Журнал","item":"https://domgazobeton.com/journal"},{"@type":"ListItem","position":3,"name":"Этапы","item":"https://domgazobeton.com/journal?rubric=etapy"},{"@type":"ListItem","position":4,"name":"Какое перекрытие выбрать"}]},
+  {"@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Какое перекрытие в газобетонном доме лучше — сборные плиты или монолит?","acceptedAnswer":{"@type":"Answer","text":"Для большинства типовых проектов — сборные железобетонные плиты: быстрее, дешевле, без длинного технологического перерыва. Монолит выбирают, когда есть эркеры, балконы или нестандартная геометрия."}},
+    {"@type":"Question","name":"Можно ли укладывать сборные плиты сразу на газобетон без пояса?","acceptedAnswer":{"@type":"Answer","text":"Технически можно, но мы так не делаем. Без распределяющего пояса нагрузка концентрируется на верхнем ряду блоков, есть риск трещин. Мы укладываем пояс под плитами — заодно он работает как надоконные перемычки."}},
+    {"@type":"Question","name":"Подходят ли деревянные перекрытия для каменного дома?","acceptedAnswer":{"@type":"Answer","text":"Технически — да. Практически — экономия сомнительная: зыбкость пола, ограничения по нагрузке, хуже шумоизоляция. В каменном доме обычно ставят каменное перекрытие."}},
+    {"@type":"Question","name":"Что такое сборно-монолитное перекрытие «Марко»?","acceptedAnswer":{"@type":"Answer","text":"Гибрид: на стену укладывают сборные балки, между ними — заполнение из лёгких блоков, сверху заливают тонкий слой бетона. По стоимости сопоставимо с монолитом, в России — нишевое решение."}}
+  ]}
+]}
+</script>
+</head>
+<body>
+
+<header class="site-header"><div class="site-header__inner"><a href="/" class="site-header__logo">DOMGAZOBETON</a><nav class="nav"><span class="nav__item">Проекты<span class="nav__caret">▾</span><span class="nav__dropdown"><a href="/projects">Все проекты</a><a href="/projects/popular">Популярные проекты</a><a href="/projects/ready">Купить готовый дом</a></span></span><span class="nav__item">Услуги<span class="nav__caret">▾</span><span class="nav__dropdown"><a href="/services/design">Проектирование</a><a href="/services/build">Строительство</a><a href="/services/interior">Дизайн интерьеров</a><a href="/services/engineering">Инженерные системы</a><a href="/services/finishing">Отделка</a><a href="/services/maintenance">Обслуживание дома</a></span></span><span class="nav__item">Компания<span class="nav__caret">▾</span><span class="nav__dropdown"><a href="/about">О нас</a><a href="/about/excursion">Экскурсия в компанию</a><a href="/about/merch">Мерч</a></span></span><a href="/built" class="nav__item">Построено</a><a href="/mortgage" class="nav__item">Ипотека</a><a href="/journal" class="nav__item nav__item--active">Журнал</a><a href="/contacts" class="nav__item">Контакты</a></nav><div class="site-header__cta"><a href="#call-form" class="site-header__cta-link">Заказать звонок</a><a href="tel:+78005502834" class="site-header__phone">8 800 550-28-34</a></div><button class="burger" aria-label="Меню"><span></span><span></span><span></span></button></div></header>
+
+<aside id="mobile-menu" class="mobile-menu"><div class="mobile-menu__top"><span class="site-header__logo">DOMGAZOBETON</span><button class="mobile-menu__close">✕</button></div><nav class="mobile-menu__list"><a href="/projects">Проекты</a><a href="/services">Услуги</a><a href="/about">Компания</a><a href="/built">Построено</a><a href="/mortgage">Ипотека</a><a href="/journal">Журнал</a><a href="/contacts">Контакты</a></nav><div class="mobile-menu__foot"><a href="tel:+78005502834" class="mobile-menu__phone">8 800 550-28-34</a><a href="#call-form" class="btn btn--primary">Заказать звонок</a></div></aside>
+
+<nav class="crumbs"><a href="/">Главная</a><span class="crumbs__sep">/</span><a href="/journal">Журнал</a><span class="crumbs__sep">/</span><a href="/journal?rubric=etapy">Этапы</a><span class="crumbs__sep">/</span><span class="crumbs__current">Перекрытие для газобетонного дома</span></nav>
+
+<header class="article-hero">
+  <div class="label article-hero__rubric">Этапы · Конструктив</div>
+  <h1 class="article-hero__title">Какое перекрытие выбрать для дома из газобетона: 4 варианта и плюсы каждого</h1>
+  <p class="article-hero__lead">От выбора зависят сроки стройки, бюджет, шумоизоляция и даже отделка потолков. Разбираем четыре основных варианта, говорим, что мы ставим чаще всего и почему.</p>
+  <div class="article-hero__meta">
+    <span>Автор статьи</span>
+    <span class="article-hero__meta-sep">·</span>
+    <time datetime="2026-05-31">обновлено 31 мая 2026</time>
+    <span class="article-hero__meta-sep">·</span>
+    <span>8 минут чтения</span>
+  </div>
+</header>
+
+<div class="article-cover-wrap">
+  <img class="article-cover" src="assets/img/perekrytie-01-hero.png" alt="Перекрытие в доме из газобетона DOMGAZOBETON" loading="eager" decoding="async">
+</div>
+
+<div class="article-layout">
+  <aside class="article-toc" aria-label="Оглавление">
+    <div class="label article-toc__label">В этой статье</div>
+    <ul class="article-toc__list">
+      <li class="article-toc__item is-active" data-target="sec-4"><a href="#sec-4">1. Четыре варианта</a></li>
+      <li class="article-toc__item" data-target="sec-plity"><a href="#sec-plity">2. Сборные плиты</a></li>
+      <li class="article-toc__item" data-target="sec-monolith"><a href="#sec-monolith">3. Монолит</a></li>
+      <li class="article-toc__item" data-target="sec-vybor"><a href="#sec-vybor">4. Когда что ставить</a></li>
+      <li class="article-toc__item" data-target="sec-oshibki"><a href="#sec-oshibki">5. Типовые ошибки</a></li>
+      <li class="article-toc__item" data-target="sec-dg"><a href="#sec-dg">6. Опыт DOMGAZOBETON</a></li>
+      <li class="article-toc__item" data-target="sec-faq"><a href="#sec-faq">7. Частые вопросы</a></li>
+    </ul>
+    <div class="article-side-cta">
+      <div class="label article-side-cta__label">Помощь конструктора</div>
+      <div class="article-side-cta__title">Подобрать перекрытие под ваш проект</div>
+      <div class="article-side-cta__sub">Рассчитаем по геометрии дома, нагрузке и бюджету — бесплатно.</div>
+      <div style="margin-top:16px"><button type="button" class="btn btn--primary btn--sm" data-open-modal data-modal-title="Подобрать перекрытие под ваш проект" data-modal-sub="Рассчитаем по геометрии дома, нагрузке и бюджету — бесплатно.">Получить расчёт</button></div>
+    </div>
+  </aside>
+
+  <details class="article-toc-mobile">
+    <summary><div><div class="article-toc-mobile__title">Оглавление</div><div class="article-toc-mobile__count">7 разделов · 8 мин чтения</div></div><span class="article-toc-mobile__icon">+</span></summary>
+    <ul class="article-toc-mobile__list"><li><a href="#sec-4">1. Четыре варианта</a></li><li><a href="#sec-plity">2. Сборные плиты</a></li><li><a href="#sec-monolith">3. Монолит</a></li><li><a href="#sec-vybor">4. Когда что ставить</a></li><li><a href="#sec-oshibki">5. Ошибки</a></li><li><a href="#sec-dg">6. Опыт DG</a></li><li><a href="#sec-faq">7. FAQ</a></li></ul>
+  </details>
+
+  <article class="article-content">
+
+    <p>Перекрытие — узел, на котором держится вся прочность каменного дома и комфорт жизни в нём. Для дома из газобетона есть четыре основных варианта, и каждый из них работает в своих сценариях.</p>
+
+    <section id="sec-4">
+      <h2>Четыре основных варианта</h2>
+      <ol class="numbered-list">
+        <li><strong>Сборные железобетонные многопустотные плиты.</strong> Заводская готовность, монтаж за день.</li>
+        <li><strong>Монолитное железобетонное перекрытие.</strong> Заливается на месте.</li>
+        <li><strong>Перекрытия по деревянным балкам.</strong> Лёгкий, но «зыбкий» вариант.</li>
+        <li><strong>Сборно-монолитное ребристое перекрытие «Марко».</strong> Гибрид сборных балок и монолитной заливки.</li>
+      </ol>
+      <p>Чаще всего на наших объектах работаем с первым и вторым. Деревянные перекрытия в газобетонном доме — спорная экономия: основной минус — зыбкость, и в каменном доме хочется каменное же перекрытие. «Марко» по стоимости близок к монолиту, у него своя ниша.</p>
+    </section>
+
+    <section id="sec-plity">
+      <h2>Сборные железобетонные плиты — самый оптимальный вариант</h2>
+      <p>На наш взгляд, сборные плиты выигрывают по сумме факторов.</p>
+
+      <div class="pros-cons">
+        <div class="pros-cons__col"><div class="pros-cons__title pros-cons__title--plus">Плюсы</div>
+          <ul class="pros-cons__list pros-cons__list--plus">
+            <li>Монтаж за один день — кран, бригада, всё, перекрытие стоит.</li>
+            <li>Меньшая стоимость даже с учётом монолитного железобетонного пояса под опирание.</li>
+            <li>Можно укладывать без пояса — сразу на блок, заливая пояс в торце плит.</li>
+            <li>Можно сразу продолжать работы — не нужно ждать набора прочности.</li>
+            <li>Не нужен кран для подачи блоков на второй этаж — поднимают уже бригадой.</li>
+            <li>Хорошие прочность и шумоизоляция при небольшом весе.</li>
+          </ul>
+        </div>
+        <div class="pros-cons__col"><div class="pros-cons__title pros-cons__title--minus">Минусы</div>
+          <ul class="pros-cons__list pros-cons__list--minus">
+            <li>Нужна грамотная проектная работа и раскладка плит.</li>
+            <li>Заранее заказать на заводе — в горячий сезон есть ажиотаж.</li>
+            <li>Нужен монолитный железобетонный пояс под опирание плит или в торце.</li>
+            <li>Возможность проезда крана и большегрузной техники к участку.</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure>
+        <img src="assets/img/perekrytie-02.png" alt="Монтаж сборных железобетонных плит" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section id="sec-monolith">
+      <h2>Монолитное железобетонное перекрытие</h2>
+      <p>По прочности — большой запас при стандартном армировании. Дороже всех остальных вариантов (по цене сравнимо с «Марко»). Но у монолита есть преимущества, которые иногда перевешивают.</p>
+
+      <div class="pros-cons">
+        <div class="pros-cons__col"><div class="pros-cons__title pros-cons__title--plus">Плюсы</div>
+          <ul class="pros-cons__list pros-cons__list--plus">
+            <li>Большая прочность.</li>
+            <li>Возможность устройства на нестандартных формах: выступы, эркеры, балконы, круглые формы.</li>
+            <li>Не нужен отдельный монолитный пояс — перекрытие само работает как пояс.</li>
+            <li>Проще сделать штукатурные или лофт-потолки без потолочной конструкции.</li>
+          </ul>
+        </div>
+        <div class="pros-cons__col"><div class="pros-cons__title pros-cons__title--minus">Минусы</div>
+          <ul class="pros-cons__list pros-cons__list--minus">
+            <li>Нужен технологический перерыв до набора прочности — стройка ждёт.</li>
+            <li>Стоимость выше других вариантов.</li>
+            <li>Время на устройство опалубки, армирование, заливку и набор прочности.</li>
+            <li>Большой собственный вес ложится на фундамент.</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure>
+        <img src="assets/img/perekrytie-03.png" alt="Монолитное перекрытие" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section id="sec-vybor">
+      <h2>Когда что ставить</h2>
+      <ul>
+        <li><strong>Стандартный прямоугольный дом, бюджет в норме, кран проезжает</strong> — сборные плиты. Сроки короче, экономика лучше.</li>
+        <li><strong>Сложная геометрия: эркеры, балконы, круглые комнаты</strong> — монолит. Сборные плиты на нестандарт просто не лягут.</li>
+        <li><strong>Лофт-потолки, штукатурные потолки без подшива</strong> — монолит. Чистая ровная плоскость снизу.</li>
+        <li><strong>Хочется бюджет ещё ниже и готовы мириться с зыбкостью</strong> — деревянные балки. Но в каменном доме мы это не рекомендуем.</li>
+      </ul>
+    </section>
+
+    <div class="article-final-cta">
+      <form class="lead-form" data-action="/api/lead" novalidate>
+        <div class="lead-form__hero"><img src="assets/img/perekrytie-02.png" alt="Объект DOMGAZOBETON на стройке"></div>
+        <div class="lead-form__title">Запишитесь на экскурсию по строящимся объектам DOMGAZOBETON</div>
+        <div class="lead-form__sub">Свяжемся с вами, чтобы выбрать удобное время.</div>
+        <div class="lead-form__fields">
+          <input class="lead-form__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="lead-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+          <select class="lead-form__select" name="region" required><option value="">Регион строительства</option><option>СПб и область</option><option>Москва и область</option><option>Сочи и юг</option><option>Казахстан</option></select>
+          <button class="lead-form__submit" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+
+    <section id="sec-oshibki">
+      <h2>Типовые ошибки при выборе перекрытия</h2>
+      <ol class="numbered-list">
+        <li><strong>Деревянные балки в каменном доме «ради экономии».</strong> Зыбкость пола, ограничения по нагрузке, плохая шумоизоляция — экономия превращается в минус.</li>
+        <li><strong>Сборные плиты без пояса на стене.</strong> Опора без распределения нагрузки — риск трещин по верхнему ряду кладки.</li>
+        <li><strong>Монолит на сложном фундаменте без расчёта.</strong> Большой вес ложится на фундамент, который изначально не учитывал такую нагрузку.</li>
+        <li><strong>Заказ плит в горячий сезон в последний момент.</strong> Завод не успевает — стройка стоит неделями.</li>
+      </ol>
+    </section>
+
+    <section id="sec-dg">
+      <h2>Что DOMGAZOBETON делает на своих объектах</h2>
+      <p>За 10 лет работы и 300 построенных домов выстроилась практика: на стандартных прямоугольных проектах — сборные железобетонные плиты с монолитным поясом, на сложной геометрии — монолит. Деревянные перекрытия в наших проектах из газобетона почти не встречаются — каменный дом просит каменного перекрытия. <a class="link" href="https://domgazobeton.com/projects">Наши проекты</a>, <a class="link" href="https://domgazobeton.com/service_building">этапы строительства</a>.</p>
+    </section>
+
+    <section id="sec-faq" class="faq">
+      <h2>Частые вопросы</h2>
+      <details class="faq-item" open><summary><span class="faq-item__q">Какое перекрытие в газобетонном доме лучше — сборные плиты или монолит?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Для большинства типовых проектов — сборные железобетонные плиты: быстрее, дешевле, без длинного технологического перерыва. Монолит выбирают, когда есть эркеры, балконы или нестандартная геометрия.</p></div></details>
+      <details class="faq-item"><summary><span class="faq-item__q">Можно ли укладывать сборные плиты сразу на газобетон без пояса?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Технически можно, но мы так не делаем. Без распределяющего пояса нагрузка концентрируется на верхнем ряду блоков, есть риск трещин. Мы укладываем пояс под плитами — заодно он работает как надоконные перемычки.</p></div></details>
+      <details class="faq-item"><summary><span class="faq-item__q">Подходят ли деревянные перекрытия для каменного дома?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Технически — да. Практически — экономия сомнительная: зыбкость пола, ограничения по нагрузке, хуже шумоизоляция. В каменном доме обычно ставят каменное перекрытие.</p></div></details>
+      <details class="faq-item"><summary><span class="faq-item__q">Что такое сборно-монолитное перекрытие «Марко»?</span><span class="faq-item__toggle" aria-hidden="true">+</span></summary><div class="faq-item__a"><p>Гибрид: на стену укладывают сборные балки, между ними — заполнение из лёгких блоков, сверху заливают тонкий слой бетона. По стоимости сопоставимо с монолитом, в России — нишевое решение.</p></div></details>
+    </section>
+
+    <section style="margin-top:64px"><h2>Источники</h2>
+      <ol class="sources-list">
+        <li>НААГ — рекомендации по узлам кладки из газобетона: <a href="https://gazo-beton.org/" rel="nofollow">gazo-beton.org</a>.</li>
+        <li>ДОМ.РФ — рынок ИЖС: <a href="https://дом.рф/" rel="nofollow">дом.рф</a>.</li>
+      </ol>
+    </section>
+
+    <section class="related">
+      <h2>Похожие статьи</h2>
+      <div class="related-grid">
+        <a class="card" href="kladka-na-penu-ili-cement.html"><div class="card__media"><img class="card__img" src="assets/img/klej-01-hero.png" alt="" loading="lazy"><div class="card__shade"></div><span class="card__rubric">Материал</span><div class="card__title-overlay">Кладка на пену или цементный клей</div></div><div class="card__meta">6 мин</div></a>
+        <a class="card" href="utep-doma-iz-gazobetona.html"><div class="card__media"><img class="card__img" src="assets/img/utep-01-hero.png" alt="" loading="lazy"><div class="card__shade"></div><span class="card__rubric">Материал</span><div class="card__title-overlay">Нужно ли утеплять дом из газобетона</div></div><div class="card__meta">7 мин</div></a>
+        <a class="card" href="skrytye-rashody-pri-stroitelstve.html"><div class="card__media"><img class="card__img" src="assets/img/rashody-01-uchastok.png" alt="" loading="lazy"><div class="card__shade"></div><span class="card__rubric">Бюджет</span><div class="card__title-overlay">7 скрытых расходов при стройке</div></div><div class="card__meta">7 мин</div></a>
+      </div>
+    </section>
+
+    <div class="article-final-cta">
+      <form class="lead-form" id="call-form" data-action="/api/lead" novalidate>
+        <div class="lead-form__hero"><img src="assets/img/perekrytie-03.png" alt="Стройка DOMGAZOBETON"></div>
+        <div class="lead-form__title">Запишитесь на экскурсию по строящимся объектам DOMGAZOBETON</div>
+        <div class="lead-form__sub">Свяжемся с вами, чтобы выбрать удобное время.</div>
+        <div class="lead-form__fields">
+          <input class="lead-form__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="lead-form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+          <select class="lead-form__select" name="region" required><option value="">Регион строительства</option><option>СПб и область</option><option>Москва и область</option><option>Сочи и юг</option><option>Казахстан</option></select>
+          <button class="lead-form__submit" type="submit">Отправить заявку</button>
+          <div class="lead-form__agree">Нажимая кнопку, вы соглашаетесь с <a href="/privacy">политикой обработки персональных данных</a>.</div>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+
+<footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__grid"><div><div class="site-footer__brand-name">DOMGAZOBETON</div><div class="site-footer__brand-desc">Строим современные дома из газобетона в СПб, Москве, Сочи и Казахстане.</div><div class="site-footer__socials" style="margin-top:24px"><a href="https://t.me/domgazobeton">TG</a><a href="https://max.ru/domgazobeton">MAX</a><a href="https://youtube.com/@domgazobeton">YT</a><a href="https://rutube.ru/channel/domgazobeton">RT</a></div></div><div class="site-footer__col"><h4>Меню</h4><ul><li><a href="/projects">Проекты</a></li><li><a href="/services">Услуги</a></li><li><a href="/built">Построено</a></li><li><a href="/mortgage">Ипотека</a></li><li><a href="/about">Компания</a></li><li><a href="/journal">Журнал</a></li><li><a href="/contacts">Контакты</a></li></ul></div><div class="site-footer__col"><h4>Контакты</h4><div class="site-footer__address"><strong>СПб</strong>БЦ «Авиатор», ул. Мебельная, 12, корп. 1, оф. 416-1</div><div class="site-footer__address"><strong>Москва</strong>Волоколамское ш., 71, корп. 1, пом. 11/1</div></div><div class="site-footer__col"><h4>Связаться</h4><ul><li><a href="tel:+78005502834">8 800 550-28-34</a></li><li><a href="mailto:xDomgazobeton@yandex.ru">xDomgazobeton@yandex.ru</a></li><li><a href="#call-form">Заказать звонок</a></li></ul></div></div><div class="site-footer__legal"><p>Проектирование — ООО «ДОМГАЗОБЕТОН». СПб — ООО «МАТРСТРОЙ». Москва — ООО «ДОМ ГАЗОБЕТОН».</p><p>Сайт носит сугубо информационный характер и не является публичной офертой.</p></div></div></footer>
+
+<script src="assets/js/menu.js" defer></script>
+<script src="assets/js/toc.js" defer></script>
+<script src="assets/js/form.js" defer></script>
+<div id="side-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal__dialog">
+    <button class="modal__close" aria-label="Закрыть">✕</button>
+    <div class="modal__title">Получить расчёт от конструктора</div>
+    <div class="modal__sub">Свяжемся в течение 15 минут — ответим на все вопросы по проекту.</div>
+    <form class="modal__form" data-action="/api/lead" novalidate>
+      <div class="modal__fields">
+        <input class="modal__input" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+        <input class="modal__input" type="tel" name="phone" placeholder="Ваш телефон" autocomplete="tel" required>
+        <select class="modal__select" name="region" required>
+          <option value="">Регион строительства</option>
+          <option>Санкт-Петербург и область</option>
+          <option>Москва и область</option>
+          <option>Сочи и юг</option>
+          <option>Казахстан</option>
+        </select>
+        <button class="modal__submit" type="submit">Отправить заявку</button>
+        <div class="modal__agree">Нажимая кнопку, вы соглашаетесь с <a href="/privacy">политикой обработки персональных данных</a>.</div>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="assets/js/modal.js" defer></script>
+</body>
+</html>

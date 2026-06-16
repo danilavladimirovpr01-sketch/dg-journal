@@ -1,0 +1,125 @@
+/* Lead form — стиль с domgazobeton.com:
+   одна колонка по центру, светлый фон, опциональное фото-врезка сверху */
+
+.lead-form{
+  background:var(--surface);
+  padding:56px 48px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  border-radius:var(--r);
+  position:relative;
+  overflow:hidden;
+}
+
+/* Опциональная фото-врезка над заголовком (extends to form edges) */
+.lead-form__hero{
+  width:calc(100% + 96px);
+  margin:-56px -48px 36px;
+}
+.lead-form__hero img{
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  display:block;
+  background:var(--surface-alt);
+}
+
+.lead-form__title{
+  font-family:var(--sans);
+  font-size:36px;
+  font-weight:700;
+  line-height:1.15;
+  letter-spacing:-0.02em;
+  color:var(--ink);
+  margin-bottom:14px;
+  max-width:720px;
+}
+
+.lead-form__sub{
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.5;
+  margin-bottom:32px;
+  max-width:560px;
+}
+
+.lead-form__fields{
+  width:100%;
+  max-width:520px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.lead-form__input,
+.lead-form__select{
+  height:64px;
+  background:#fff;
+  border:1px solid var(--line-soft);
+  color:var(--ink);
+  padding:0 22px;
+  font-family:var(--sans);
+  font-size:15px;
+  border-radius:6px;
+  outline:none;
+  width:100%;
+  transition:border-color .15s;
+}
+.lead-form__input::placeholder{color:var(--muted)}
+.lead-form__input:focus,
+.lead-form__select:focus{border-color:var(--ink)}
+
+.lead-form__select{
+  appearance:none;
+  -webkit-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%2317171a' stroke-width='1.5'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right 22px center;
+  background-size:12px;
+  cursor:pointer;
+}
+
+.lead-form__submit{
+  height:64px;
+  background:var(--ink);
+  color:#fff;
+  border:0;
+  font-family:var(--sans);
+  font-size:15px;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+  transition:background .15s;
+  margin-top:6px;
+}
+.lead-form__submit:hover{background:var(--ink-soft)}
+.lead-form__submit:disabled{opacity:0.7;cursor:default}
+
+.lead-form__agree{
+  font-size:12px;color:var(--muted);
+  line-height:1.4;
+  margin-top:14px;
+  max-width:420px;
+}
+.lead-form__agree a{text-decoration:underline}
+
+/* Совместимость со старым модификатором — оставляем тот же светлый стиль */
+.lead-form--light{}
+
+@media (max-width:1023px){
+  .lead-form{padding:48px 32px}
+  .lead-form__hero{width:calc(100% + 64px);margin:-48px -32px 28px}
+  .lead-form__hero img{height:280px}
+  .lead-form__title{font-size:28px}
+  .lead-form__input,.lead-form__select,.lead-form__submit{height:56px;font-size:14px}
+}
+@media (max-width:480px){
+  .lead-form{padding:32px 20px}
+  .lead-form__hero{width:calc(100% + 40px);margin:-32px -20px 20px}
+  .lead-form__hero img{height:220px}
+  .lead-form__title{font-size:22px}
+  .lead-form__sub{font-size:14px;margin-bottom:24px}
+  .lead-form__input,.lead-form__select,.lead-form__submit{height:52px;font-size:14px;padding:0 18px}
+}

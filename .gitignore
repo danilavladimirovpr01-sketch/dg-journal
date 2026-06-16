@@ -1,0 +1,26 @@
+# Dev artifacts — не нужны в публичном репо
+_*.py
+_*.md
+DEPLOY-GH-PAGES.md
+dg-journal-readme.md
+tilda/
+*.pyc
+__pycache__/
+
+# Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local
+*.local
+.env*
+
+# Демо-шаблоны (не реальные статьи)
+article.html
+article-a2.html
+article-a3.html
+article-a4.html
+article-a5.html
+templates.html

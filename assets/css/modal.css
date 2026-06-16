@@ -1,0 +1,113 @@
+/* Modal — всплывающая форма по клику на side-CTA */
+.modal{
+  position:fixed;inset:0;
+  display:none;
+  align-items:center;justify-content:center;
+  padding:20px;
+  background:rgba(0,0,0,0.55);
+  z-index:200;
+  overflow-y:auto;
+}
+.modal.is-open{display:flex}
+
+.modal__dialog{
+  position:relative;
+  width:100%;
+  max-width:520px;
+  background:#fff;
+  padding:48px 40px 40px;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  border-radius:var(--r);
+  box-shadow:0 24px 64px rgba(0,0,0,0.25);
+  animation:modalIn .2s ease-out;
+}
+@keyframes modalIn{
+  from{opacity:0;transform:translateY(12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.modal__close{
+  position:absolute;top:14px;right:14px;
+  width:36px;height:36px;
+  background:transparent;border:0;
+  color:var(--muted);
+  font-size:20px;line-height:1;
+  cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  transition:background .15s,color .15s;
+}
+.modal__close:hover{background:var(--surface);color:var(--ink)}
+
+.modal__title{
+  font-family:var(--sans);
+  font-size:24px;font-weight:700;
+  letter-spacing:-0.01em;line-height:1.2;
+  color:var(--ink);
+  margin-bottom:10px;
+  max-width:380px;
+}
+.modal__sub{
+  font-size:14px;color:var(--muted);
+  line-height:1.5;
+  margin-bottom:24px;
+  max-width:380px;
+}
+
+.modal__fields{
+  width:100%;
+  display:flex;flex-direction:column;gap:12px;
+}
+.modal__input,
+.modal__select{
+  height:56px;
+  background:#fff;
+  border:1px solid var(--line-soft);
+  color:var(--ink);
+  padding:0 20px;
+  font-family:var(--sans);
+  font-size:15px;
+  border-radius:6px;
+  outline:none;
+  width:100%;
+  transition:border-color .15s;
+}
+.modal__input::placeholder{color:var(--muted)}
+.modal__input:focus,
+.modal__select:focus{border-color:var(--ink)}
+.modal__select{
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%2317171a' stroke-width='1.5'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right 20px center;
+  background-size:12px;
+  cursor:pointer;
+}
+
+.modal__submit{
+  height:56px;
+  background:var(--ink);color:#fff;
+  border:0;
+  font-family:var(--sans);font-size:15px;font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+  transition:background .15s;
+  margin-top:4px;
+}
+.modal__submit:hover{background:var(--ink-soft)}
+.modal__submit:disabled{opacity:0.7;cursor:default}
+
+.modal__agree{
+  font-size:11px;color:var(--muted);
+  line-height:1.4;
+  margin-top:10px;
+}
+.modal__agree a{text-decoration:underline}
+
+body.has-modal{overflow:hidden}
+
+@media (max-width:480px){
+  .modal{padding:0;align-items:flex-end}
+  .modal__dialog{padding:36px 22px 24px;max-width:100%;border-radius:0}
+  .modal__title{font-size:20px}
+}
